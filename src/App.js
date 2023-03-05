@@ -4,7 +4,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import MyBook from "./pages/braochure";
 import Tile from "./pages/media";
 import Gallery1 from "./pages/gallery1";
-
+import Contact from "./pages/contact";
 export default function App() {
   return (
     <BrowserRouter>
@@ -12,6 +12,7 @@ export default function App() {
         
         <Route path="brochure" element={<MyBook />} />
         <Route path="media" element={<Tile />} />
+        <Route path="contact" element={<Contact />} />
         <Route path="gallery" element={<Gallery1 />} />
           
     
