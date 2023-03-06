@@ -1,4 +1,12 @@
 
+@keyframes ringani {
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
   .container {
     height: 97vh;
     width: 90vw;
@@ -37,9 +45,13 @@
         bottom: 0px;
       }
       .ring:before {
+        animation: ringani 3s;
+        opacity: 1;
         transform: translateX(-27%) translateY(-31%) rotate(136deg);
       }
       .ring:after{
+        opacity: 1;
+        animation: ringani 3s;
         transform: translateX(-80%) translateY(-61%) rotate(320deg);
       }
     }
@@ -114,6 +126,7 @@
       rgba(0, 0, 0, 0);
     
     z-index: -1;
+    opacity: 0;
   }
   
   .ring:after {
@@ -123,6 +136,7 @@
     border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) rgb(235, 235, 235)
       rgb(235, 235, 235);
       z-index: -1;
+      opacity: 0;
   }
   
   p {

@@ -5,6 +5,7 @@ import MyBook from "./pages/braochure";
 import Tile from "./pages/media";
 import Gallery1 from "./pages/gallery1";
 import Contact from "./pages/contact";
+import Brochure2 from "./pages/brochure2";
 export default function App() {
   return (
     <BrowserRouter>
@@ -14,6 +15,7 @@ export default function App() {
         <Route path="media" element={<Tile />} />
         <Route path="contact" element={<Contact />} />
         <Route path="gallery" element={<Gallery1 />} />
+        <Route path="brochure2" element={<Brochure2/>}/>
           
     
       </Routes>

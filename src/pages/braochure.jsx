@@ -1,4 +1,5 @@
 import HTMLFlipBook from "react-pageflip";
+
 import { forwardRef } from "react";
 import "./braochure.css"
 const Page = forwardRef((props, ref) => {
@@ -13,10 +14,11 @@ const Page = forwardRef((props, ref) => {
   });
   
  export default function MyBook(props) {
+  
   const widthwin=window.innerWidth
   const height=window.innerHeight
     return (
-      <HTMLFlipBook width={widthwin/2} height={height/2} className="brochuremain">
+      <HTMLFlipBook width={widthwin/2} height={height/2} className="brochuremain" ref={(component) => (this.pageFlip = component)}>
         <Page number="1" imglo='imagesg/1.jpg'>Page text</Page>
         <Page number="2" imglo='imagesg/2.jpg'>Page text</Page>
         <Page number="3" imglo='imagesg/7.jpg'>Page text</Page>
